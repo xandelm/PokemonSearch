@@ -1,0 +1,126 @@
+:root {
+  --charizardBeigeLight: #f8ebb3;
+  --charizardBeigeDark: #dbc795;
+  --charizardBlueLight: #3d99a9;
+  --charizardBlueDark: #016c7d;
+  --charizardOrange: #f3a76b;
+  --logoYellow: #fac705;
+  --logoBlue: #3d69bb;
+  --mainGreen: #57bd84;
+  --font-fam: "Lato", sans-serif;
+  --height: 5rem;
+  --btn-width: 6rem;
+}
+
+
+html {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  background-color: var(--charizardBlueLight);
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+div#container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background-color: lightgray;
+  border-radius: 10px;
+  /* box-shadow: 5px 5px 3px black; */
+  margin: 10% auto 10px;
+  padding: 5px 10px 5px 10px;
+}
+
+form {
+  position: relative;
+  width: 40rem;
+  background: var(--mainGreen);
+  border-radius: .7rem;
+}
+
+input,
+button {
+  height: var(--height);
+  font-family: var(--font-fam);
+  border: 0;
+  font-size: 1.8rem;
+}
+
+input[type=search] {
+  outline: 0;
+  width: 100%;
+  background: #fff;
+  padding: 0 1.6rem;
+  border-radius: .7rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: all .4s cubic-bezier(0, 0, 0.43, 1.49);
+  transition-property: width, border-radius;
+  z-index: 1;
+  position: relative;
+}
+
+button {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 6rem;
+  font-weight: bold;
+  background: var(--mainGreen);
+  border-radius: 0 .7rem .7rem 0;
+}
+
+input:not(:-moz-placeholder-shown) {
+  border-radius: .7rem 0 0 .7rem;
+  width: calc(100% - var(--btn-width));
+}
+
+input:not(:-ms-input-placeholder) {
+  border-radius: var(--rad) 0 0 var(--rad);
+  width: calc(100% - var(--btn-width));
+}
+
+input:not(:placeholder-shown) {
+  border-radius: var(--rad) 0 0 var(--rad);
+  width: calc(100% - var(--btn-width));
+}
+
+input:not(:-moz-placeholder-shown)+button {
+  display: block;
+}
+
+input:not(:-ms-input-placeholder)+button {
+  display: block;
+}
+
+input:not(:placeholder-shown)+button {
+  display: block;
+}
+
+label {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
