@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>PokemonSearch</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id='container'>
+    <h2 id='name'></h2>
+    <img id='pic'>
+  </div>
+
+  <form onsubmit="event.preventDefault();" role="search">
+    <input id="pokemonName" placeholder="Nome do Pokémon..." type="search" autofocus required>
+    <button id='btn_load_pokemon'>Buscar</button>
+    <script src="script.js"></script>
+  </form>
+
+</body>
+</html>
