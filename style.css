@@ -45,6 +45,8 @@ div#container {
   /* box-shadow: 5px 5px 3px black; */
   margin: 10% auto 10px;
   padding: 5px 10px 5px 10px;
+  font-family: var(--font-fam);
+  font-size: 1.6rem;
 }
 
 form {
