@@ -19,6 +19,14 @@ function loadPokemon() {
     console.clear();
     console.log(data);
     document.getElementById('name').innerHTML = data['name'];
+    // document.getElementById('type').innerHTML = data['types'];
+    document.getElementById('type').innerHTML = '';
+    data.types.forEach((type)=>{
+      const typeElement = document.createElement('span');
+      typeElement.textContent = type.type.name;
+      document.getElementById('type').appendChild(typeElement);
+    });
+
     let img = data['sprites']['front_default'];
     document.getElementById('pic').setAttribute('src', img);
 
