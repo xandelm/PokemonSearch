@@ -49,6 +49,11 @@ div#container {
   font-size: 1.6rem;
 }
 
+div#evolutions {
+  display:flex;
+  flex-direction: row;
+}
+
 form {
   position: relative;
   width: 40rem;
@@ -88,6 +93,8 @@ button {
   font-weight: bold;
   background: var(--mainGreen);
   border-radius: 0 .7rem .7rem 0;
+  padding: 0 0.3rem 0 0;
+  text-align: end;
 }
 
 input:not(:-moz-placeholder-shown) {
